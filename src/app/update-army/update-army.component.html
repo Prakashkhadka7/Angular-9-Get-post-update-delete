@@ -1,0 +1,22 @@
+<h2>Update Army Details</h2>
+<form [formGroup]="armyupdateForm" (ngSubmit)="submitForm()" novalidate>
+
+    <!-- <div class="form-group">
+        <label>Army Id Number</label>
+        <input type="text" formControlName="id" class="form-control" maxlength="2">
+    </div> -->
+    <div class="alert dismissible">Army Id can't be updated.</div>
+    <!----I commented her because the information is only updated but not the id -->
+    <div class="form-group">
+        <label>Army Name</label>
+        <input type="text" formControlName="army_name" class="form-control" maxlength="20">
+    </div>
+    <div class="form-group">
+        <label>ArmyInformation</label>
+        <textarea class="form-control" formControlName="army_details" rows="5" maxlength="50"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">UPDATE</button>
+
+</form>
+
+<!----UPdating details and other information of Army-->

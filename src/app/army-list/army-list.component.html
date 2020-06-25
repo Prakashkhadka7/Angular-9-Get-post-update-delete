@@ -1,0 +1,33 @@
+<div class="container wrapper">
+    <div class="row">
+
+        <!-- Issue table -->
+        <div class="col-md-12">
+            <div class="inner">
+                <h3>My Issues</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Issue Name</th>
+                            <th scope="col">Issue Details</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let army of armyList">
+                            <th scope="row">{{army.id}}</th>
+                            <td>{{army.army_name}}</td>
+                            <td>{{army.army_details}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm move-right" [routerLink]="['/update/', army.id]">Update</button>
+                                <button type="button" class="btn btn-danger btn-sm" (click)="deleteArm(army)">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
