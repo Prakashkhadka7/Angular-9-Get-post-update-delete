@@ -1,6 +1,11 @@
 {
   "Armies": [
     {
+      "army_name": "khanal",
+      "army_details": "themjong",
+      "id": 1
+    },
+    {
       "id": 2,
       "army_name": "ramesh",
       "army_details": "chemjong"
