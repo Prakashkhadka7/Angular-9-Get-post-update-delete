@@ -1,19 +1,21 @@
-{{this.title}}
 <div class="jumbotron">
-    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+  <nav class="navbar navbar-expand-sm bg-dark fixed-top">
 
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/create']" routerLinkActive="router-link-active">Recruit Army</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/list']" routerLinkActive="router-link-active">Army Lists</a>
-            </li>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/create']" routerLinkActive="router-link-active">Recruit Army</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/list']" routerLinkActive="router-link-active">Army Lists</a>
+      </li>
 
-        </ul>
+    </ul>
 
-    </nav>
+  </nav>
+  <div>
+    <h1 _ngcontent-tpf-c48="" class="display-6 text-center">Angular crud example</h1>
+  </div>
 
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
